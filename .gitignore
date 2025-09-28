@@ -1,6 +1,10 @@
 # Maven target folder
 target/
 
+# Test output folders
+test-output/
+ExtentReports/
+
 # Eclipse/IDEA project files
 .classpath
 .project
@@ -10,6 +14,3 @@ target/
 
 # Logs
 *.log
-
-# Test output folders
-test-output/
