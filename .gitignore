@@ -1,0 +1,12 @@
+# Maven target folder
+target/
+
+# Eclipse/IDEA project files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# Logs
+*.log
