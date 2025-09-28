@@ -10,3 +10,6 @@ target/
 
 # Logs
 *.log
+
+# Test output folders
+test-output/
