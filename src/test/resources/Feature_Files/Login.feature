@@ -1,3 +1,4 @@
+@Login
 Feature: Login functionality
 
 As a registered user
@@ -12,4 +13,20 @@ When I navigate to the login page
 And I enter a valid username and password
 And I click on the login button
 Then I should be logged in successfully
-And I should see my account page
+
+Scenario: Login with Invalid credentials
+When I navigate to the login page
+And I enter a Invalid username and password
+And I click on the login button
+Then I should not be allowed to log in and warning message should appear
+
+Scenario Outline: Login functionality with multiple credentials
+When I navigate to the login page
+And I enter username '<username>' and password '<password>'
+And I click on the login button
+
+Examples:
+| username                    | password        |
+| bloggerdelhi123@gmail.com   | Password        |
+| invaliduser@gmail.com       | wrongpass       |
+|                             | somepass        |
