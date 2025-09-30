@@ -6,10 +6,7 @@ import com.aventstack.extentreports.Status;
 
 import drivermanager.PageClassManager;
 import drivermanager.WebDriverManager;
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.Scenario;
 import utils.ExtentManager;
-import utils.TakeScreenshot;
 
 public class TestContext {
 	
@@ -21,10 +18,11 @@ public class TestContext {
 	public TestContext() {
 		System.out.println("........Parent TestContext constructor.......");
 		reports=ExtentManager.getExtentReports("MyReports.html");
-		pageClassManager=new PageClassManager(); //creating Object of the class PageClassManager here
+		pageClassManager=new PageClassManager(); // creating Object of the class PageClassManager here
 	}
 	
 	public void createScenario(String scenarioName) {
+		
 		extentTest = reports.createTest(scenarioName);   // extentTest will be declare here for creating Test.
 		this.pageClassManager.getWebDriverManager().init(extentTest);;
 	}

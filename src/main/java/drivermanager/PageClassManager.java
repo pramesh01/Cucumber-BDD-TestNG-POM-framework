@@ -3,12 +3,14 @@ package drivermanager;
 import pageclasses.HomePage;
 import pageclasses.LoginPage;
 import pageclasses.MyAccountPage;
+import pageclasses.SearchPage;
 
 public class PageClassManager {
 	
 	HomePage homePage;
 	LoginPage loginPage;
 	MyAccountPage myAccountPage;
+	SearchPage searchPage;
 	WebDriverManager webDriverManager;
 	
 	public PageClassManager() {
@@ -38,6 +40,13 @@ public class PageClassManager {
 			myAccountPage=new MyAccountPage(webDriverManager);
 		}
 		return myAccountPage;
+	}
+	
+	public SearchPage getSearchPage() {
+		if(searchPage==null) {
+			searchPage=new SearchPage(webDriverManager);
+		}
+		return searchPage;
 	}
 
 }

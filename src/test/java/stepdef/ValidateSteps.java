@@ -23,5 +23,6 @@ public class ValidateSteps {
 		String expectedUserText = "Parthik Verma"; // put your expected username here
 		Assert.assertEquals(actualUserText, expectedUserText, "User login verification failed!");
 	}
+	
 
 }

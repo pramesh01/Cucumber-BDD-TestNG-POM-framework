@@ -1,15 +1,10 @@
 package stepdef;
 
 import context.TestContext;
-import io.cucumber.java.After;
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import pageclasses.HomePage;
 import pageclasses.LoginPage;
-import utils.TakeScreenshot;
 
 public class HomeSteps {
 
@@ -23,7 +18,7 @@ public class HomeSteps {
 
 	}
 
-	@Before
+	/*@Before
 	public void before(Scenario scenario) {
 		context.createScenario(scenario.getName());
 		context.log("before Scenario:  " + scenario.getName());
@@ -55,7 +50,7 @@ public class HomeSteps {
 		context.endScenario();
 		System.out.println("-----------------------------------------------------");
 
-	}
+	}*/
 
 	@Given("I open the application")
 	public void i_open_the_application() {

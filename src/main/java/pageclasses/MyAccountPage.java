@@ -1,12 +1,6 @@
 package pageclasses;
 
-import java.time.Duration;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import drivermanager.WebDriverManager;
 
@@ -17,6 +11,9 @@ public class MyAccountPage {
 	private static final By LOGGEDIN_USER_TEXT = By.xpath("//a[@title='View my customer account']");
 	private static final By ADD_NEW_ADDRESS_LINK_LOCATOR = By.xpath("//a[@title='Add my first address']");
 	private static final By SEARCH_TEXTBOX_LOCATOR = By.id("search_query_top");
+	private static final By LOGOUT_BUTTON_LOCATOR = By.xpath("//*[@title='Log me out']");
+	private static final By SIGNIN_LINK_LOCATOR = By.xpath("//a[contains(text(),'Sign in')]");
+	
 
 	public MyAccountPage(WebDriverManager webDriverManager) {
 		this.webDriverManager = webDriverManager;
@@ -24,6 +21,14 @@ public class MyAccountPage {
 
 	public String getLoggedin_UserText() {
 		return webDriverManager.getText(LOGGEDIN_USER_TEXT);
+	}
+
+	public void clickLogout() {
+		webDriverManager.clickOn(LOGOUT_BUTTON_LOCATOR);
+	}
+	
+	public String getLogOut_Confirmation() {
+		return webDriverManager.getText(SIGNIN_LINK_LOCATOR);
 	}
 
 	/*public AddressPage gotoAddAddressPage() {
