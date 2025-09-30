@@ -1,10 +1,10 @@
 # Selenium_Java_Cucumber-BDD-Framework_Project
 
 ## Overview
-- This project is an **Automation Framework** using **selenium with Java** , built for implementing **Behavior Driven Development (BDD)** using **Cucumber**.  
-- The framework is designed following **industry-standard practices** and **modular design principles**, making it **scalable, maintainable, and easy to extend**.  
 
-- The framework is built for the demo website: [http://www.automationpractice.pl/index.php](http://www.automationpractice.pl/index.php).  
+This project is an **Automation Framework** using **Selenium with Java**, built for implementing **Behavior Driven Development (BDD) using Cucumber**. The framework is designed following **industry-standard practices** and **modular design principles**, making it **scalable, maintainable, and easy to extend**.  
+
+- The framework is built for the demo website: [http://www.automationpractice.pl/index.php](http://www.automationpractice.pl/index.php).
 
 ## Used following Tech skills while creating the Framework:
 
